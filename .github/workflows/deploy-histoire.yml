@@ -3,7 +3,7 @@ name: Deploy Histoire
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   HISTOIRE_BASE: /histoire-ghpages-repro/
