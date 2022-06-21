@@ -1,4 +1,4 @@
-import { O as isRef, i as unref } from "./vendor.f63f5b0c.js";
+import { O as isRef, i as unref } from "./vendor.64dcab3f.js";
 const STATE_SYNC = "__histoire:state-sync";
 const SANDBOX_READY = "__histoire:sandbox-ready";
 const EVENT_SEND = "__histoire:event";
