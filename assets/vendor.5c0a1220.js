@@ -16593,6 +16593,16 @@ function createWebHistory(base) {
   });
   return routerHistory;
 }
+function createWebHashHistory(base) {
+  base = location.host ? base || location.pathname + location.search : "";
+  if (!base.includes("#"))
+    base += "#";
+  if (!base.endsWith("#/") && !base.endsWith("#")) {
+    warn(`A hash base must end with a "#":
+"${base}" should be "${base.replace(/#.*$/, "#")}".`);
+  }
+  return createWebHistory(base);
+}
 function isRouteLocation(route) {
   return typeof route === "string" || route && typeof route === "object";
 }
@@ -37230,4 +37240,4 @@ var flexsearch_bundle = { exports: {} };
   })(commonjsGlobal);
 })(flexsearch_bundle);
 var flexsearch = flexsearch_bundle.exports;
-export { h as $, defineStore as A, useTitle as B, createApp as C, createPinia as D, plugin as E, Fragment as F, useStorage as G, renderList as H, Icon$1 as I, useEventListener$1 as J, resolveDirective as K, withDirectives as L, defineAsyncComponent as M, vShow as N, isRef as O, useCssVars as P, createTextVNode as Q, reactive as R, useRoute as S, Transition as T, pushScopeId as U, popScopeId as V, useDark as W, useToggle as X, markRaw as Y, parseQuery as Z, _sfc_main$4 as _, openBlock as a, _sfc_main$1 as a0, applyStateToVariant as a1, useFocus as a2, refDebounced as a3, vModelText as a4, flexsearch as a5, toRefs as a6, useRouter as a7, watchEffect as a8, resolveDynamicComponent as a9, nextTick as aa, useResizeObserver as ab, clone as ac, omit as ad, useTimeoutFn$1 as ae, onClickOutside as af, shallowRef as ag, getHighlighter as ah, unindent as ai, generateSourceCode as aj, HstCopyIcon as ak, Dropdown$1 as al, HstTextarea as am, HstCheckbox as an, HstNumber as ao, HstText as ap, setCDN as aq, onBeforeUnmount as ar, toRaw as as, createStaticVNode as at, _export_sfc as au, Tailwind_story$1 as av, createElementBlock as b, computed as c, defineComponent as d, createBaseVNode as e, renderSlot as f, withModifiers as g, normalizeStyle as h, unref as i, createBlock as j, withCtx as k, createVNode as l, createCommentVNode as m, normalizeClass as n, onUnmounted as o, onMounted as p, resolveComponent as q, ref as r, scrollIntoView as s, toDisplayString as t, useMediaQuery as u, withKeys as v, watch as w, mergeProps as x, createRouter as y, createWebHistory as z };
+export { parseQuery as $, createWebHistory as A, createWebHashHistory as B, useTitle as C, createApp as D, createPinia as E, Fragment as F, plugin as G, useStorage as H, Icon$1 as I, renderList as J, useEventListener$1 as K, resolveDirective as L, withDirectives as M, defineAsyncComponent as N, vShow as O, isRef as P, useCssVars as Q, createTextVNode as R, reactive as S, Transition as T, useRoute as U, pushScopeId as V, popScopeId as W, useDark as X, useToggle as Y, markRaw as Z, _sfc_main$4 as _, openBlock as a, h as a0, _sfc_main$1 as a1, applyStateToVariant as a2, useFocus as a3, refDebounced as a4, vModelText as a5, flexsearch as a6, toRefs as a7, useRouter as a8, watchEffect as a9, resolveDynamicComponent as aa, nextTick as ab, useResizeObserver as ac, clone as ad, omit as ae, useTimeoutFn$1 as af, onClickOutside as ag, shallowRef as ah, getHighlighter as ai, unindent as aj, generateSourceCode as ak, HstCopyIcon as al, Dropdown$1 as am, HstTextarea as an, HstCheckbox as ao, HstNumber as ap, HstText as aq, setCDN as ar, onBeforeUnmount as as, toRaw as at, createStaticVNode as au, _export_sfc as av, Tailwind_story$1 as aw, createElementBlock as b, computed as c, defineComponent as d, createBaseVNode as e, renderSlot as f, withModifiers as g, normalizeStyle as h, unref as i, createBlock as j, withCtx as k, createVNode as l, createCommentVNode as m, normalizeClass as n, onUnmounted as o, onMounted as p, resolveComponent as q, ref as r, scrollIntoView as s, toDisplayString as t, useMediaQuery as u, withKeys as v, watch as w, mergeProps as x, createRouter as y, defineStore as z };

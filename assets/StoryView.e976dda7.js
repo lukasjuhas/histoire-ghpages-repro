@@ -1,8 +1,8 @@
-import { A as defineStore, R as reactive, r as ref, w as watch, d as defineComponent, a7 as useRouter, S as useRoute, i as unref, a as openBlock, j as createBlock, k as withCtx, b as createElementBlock, l as createVNode, a8 as watchEffect, I as Icon, G as useStorage, Q as createTextVNode, c as computed, e as createBaseVNode, a9 as resolveDynamicComponent, P as useCssVars, m as createCommentVNode, F as Fragment, H as renderList, a0 as _sfc_main$1$1, p as onMounted, aa as nextTick, t as toDisplayString, ab as useResizeObserver, h as normalizeStyle, ac as clone, ad as omit, ae as useTimeoutFn, af as onClickOutside, K as resolveDirective, L as withDirectives, a4 as vModelText, g as withModifiers, O as isRef, v as withKeys, n as normalizeClass, q as resolveComponent, ag as shallowRef, ah as getHighlighter, ai as unindent, aj as generateSourceCode, ak as HstCopyIcon, f as renderSlot, a6 as toRefs, x as mergeProps, al as Dropdown, a1 as applyStateToVariant, am as HstTextarea, an as HstCheckbox, ao as HstNumber, ap as HstText, U as pushScopeId, V as popScopeId, T as Transition, $ as h, aq as setCDN, ar as onBeforeUnmount, J as useEventListener, as as toRaw, o as onUnmounted, at as createStaticVNode } from "./vendor.64dcab3f.js";
-import { u as useStoryStore, i as isMobile, b as BaseSplitPane, _ as _export_sfc, c as _sfc_main$v, a as useScrollOnActive, B as BaseListItemLink, d as base } from "./bundle-main.f4adc958.js";
-import { B as BaseEmpty } from "./BaseEmpty.0cc0e8e0.js";
-import { i as isDark, h as histoireConfig } from "./mapping.4bb18993.js";
-import { t as toRawDeep, a as SANDBOX_READY, E as EVENT_SEND, S as STATE_SYNC, P as PREVIEW_SETTINGS_SYNC } from "./state.bb83038d.js";
+import { z as defineStore, S as reactive, r as ref, w as watch, d as defineComponent, a8 as useRouter, U as useRoute, i as unref, a as openBlock, j as createBlock, k as withCtx, b as createElementBlock, l as createVNode, a9 as watchEffect, I as Icon, H as useStorage, R as createTextVNode, c as computed, e as createBaseVNode, aa as resolveDynamicComponent, Q as useCssVars, m as createCommentVNode, F as Fragment, J as renderList, a1 as _sfc_main$1$1, p as onMounted, ab as nextTick, t as toDisplayString, ac as useResizeObserver, h as normalizeStyle, ad as clone, ae as omit, af as useTimeoutFn, ag as onClickOutside, L as resolveDirective, M as withDirectives, a5 as vModelText, g as withModifiers, P as isRef, v as withKeys, n as normalizeClass, q as resolveComponent, ah as shallowRef, ai as getHighlighter, aj as unindent, ak as generateSourceCode, al as HstCopyIcon, f as renderSlot, a7 as toRefs, x as mergeProps, am as Dropdown, a2 as applyStateToVariant, an as HstTextarea, ao as HstCheckbox, ap as HstNumber, aq as HstText, V as pushScopeId, W as popScopeId, T as Transition, a0 as h, ar as setCDN, as as onBeforeUnmount, K as useEventListener, at as toRaw, o as onUnmounted, au as createStaticVNode } from "./vendor.5c0a1220.js";
+import { u as useStoryStore, i as isMobile, b as BaseSplitPane, _ as _export_sfc, c as _sfc_main$v, a as useScrollOnActive, B as BaseListItemLink, d as base } from "./bundle-main.4f38a672.js";
+import { B as BaseEmpty } from "./BaseEmpty.c4eed44a.js";
+import { i as isDark, h as histoireConfig } from "./mapping.5bb37e9c.js";
+import { t as toRawDeep, a as SANDBOX_READY, E as EVENT_SEND, S as STATE_SYNC, P as PREVIEW_SETTINGS_SYNC } from "./state.6b33d025.js";
 const useEventsStore = defineStore("events", () => {
   const storyStore = useStoryStore();
   const events = reactive([]);
@@ -603,7 +603,7 @@ function getSandboxUrl(story, variant) {
   const url = new URLSearchParams();
   url.append("storyId", story.id);
   url.append("variantId", variant.id);
-  return `${base}__sandbox?${url.toString()}`;
+  return `${base}__sandbox.html?${url.toString()}`;
 }
 const _hoisted_1$l = ["href"];
 const _sfc_main$n = /* @__PURE__ */ defineComponent({
